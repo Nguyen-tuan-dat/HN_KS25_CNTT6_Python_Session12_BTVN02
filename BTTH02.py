@@ -85,7 +85,6 @@ while True:
                 print("Mã sổ tiết kiệm đã tồn tại!")
                 continue
             customer_name = input("- Nhập tên khách hàng: ").strip()
-            # Bẫy 2
             if not customer_name:
                 print("Tên khách hàng không được để trống")
                 continue
@@ -204,7 +203,6 @@ while True:
             print(f"Tổng tiền nhận khi đến hạn: {total_amount:,.0f} VND")
         case '6':
             account_id = input("- Nhập mã sổ tiết kiệm cần kiểm tra: ").strip().upper()
-            
             account_to_check = None
             for acc in saving_accounts:
                 if acc["account_id"] == account_id:
